@@ -4,6 +4,7 @@
         "usuario": "root",
         "senha": "461010",
         "host": "localhost"
+
     },
     "api": {
         "porta": 3000
