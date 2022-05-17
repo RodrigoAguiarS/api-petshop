@@ -19,11 +19,12 @@ const colunas = {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-           model: require('../ModeloTabelaFornecedor'),
-           key: 'id'
+            model: require('../ModeloTabelaFornecedor'),
+            key: 'id'
         }
     }
 }
+
 const opcoes = {
     freezeTableName: true,
     tableName: 'produtos',
@@ -33,4 +34,4 @@ const opcoes = {
     version: 'versao'
 }
 
-module.exports = instancia.define('forncedor', colunas, opcoes)
+module.exports = instancia.define('produto', colunas, opcoes)

@@ -66,7 +66,6 @@ class SerializadorFornecedor extends Serializador {
         this.contentType = contentType
         this.camposPublicos = [
             'id',
-            'empresa',
             'categoria'
         ].concat(camposExtras || [])
         this.tagSingular = 'fornecedor'
@@ -75,17 +74,16 @@ class SerializadorFornecedor extends Serializador {
 }
 
 class SerializadorProduto extends Serializador {
-    constructor (contentType, camposExtras){
+    constructor (contentType, camposExtras) {
         super()
         this.contentType = contentType
         this.camposPublicos = [
             'id',
             'titulo'
         ].concat(camposExtras || [])
-        this.tagPlural = 'produtos'
         this.tagSingular = 'produto'
+        this.tagPlural = 'produtos'
     }
-
 }
 
 class SerializadorErro extends Serializador {
